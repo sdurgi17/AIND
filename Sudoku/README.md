@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: For each unit (among row_units, column_units, grid_units and diagonal_units) we search for the pair of boxes which have exactly two possibilities (let's call them pencil marks). For each box in that unit (other than the pair selected) we strike the two pencil marks. We apply the same constraint along with others over the board till we reach a solution or a state where no more updates can be made on the board.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: We add a new set of units ( 2  diagonal units) to the existing set of units (9 row, 9 column, 9 grid). We propagate the constraints (only value, elimation, naked_twins) repeatedly along all the units till we reach a solution or a state where no more updates can be made on the board.
 
 ### Install
 
